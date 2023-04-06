@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/root_custom_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+
+        <com.commonlib.customviews.CustomImageView
+            android:id="@+id/ivLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:padding="@dimen/view_space_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.commonlib.customviews.CustomTextView
+            android:id="@+id/ctvTitle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:text="TextView"
+            android:textAllCaps="true"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@+id/ivLeft"
+            app:layout_constraintRight_toLeftOf="@+id/ivRight"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516"
+            app:layout_goneMarginLeft="@dimen/view_space_10"
+            app:layout_goneMarginStart="@dimen/view_space_10" />
+
+        <RelativeLayout
+            android:id="@+id/layout_drop_down"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_space_10"
+            android:layout_marginLeft="@dimen/view_space_10"
+            android:layout_marginTop="@dimen/view_space_4"
+            android:layout_marginEnd="@dimen/view_space_10"
+            android:layout_marginRight="@dimen/view_space_10"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintBottom_toTopOf="@id/guideline"
+            app:layout_constraintEnd_toStartOf="@id/ivRight"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/ivRight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ivRight"
+            app:layout_constraintVertical_bias="0.5"
+            android:visibility="gone"
+            app:layout_goneMarginLeft="@dimen/view_space_10"
+            app:layout_goneMarginStart="@dimen/view_space_10">
+
+            <com.commonlib.customviews.CustomImageView
+                android:id="@+id/civ_drop_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@id/ctv_drop_down_title"
+                android:layout_toRightOf="@id/ctv_drop_down_title"
+                android:paddingStart="@dimen/view_space_10"
+                android:paddingLeft="@dimen/view_space_10"
+                android:paddingTop="@dimen/view_space_4"
+                android:paddingEnd="@dimen/view_space_10"
+                android:paddingRight="@dimen/view_space_10"
+                android:paddingBottom="@dimen/view_space_4"
+                android:rotation="90"
+                android:visibility="gone" />
+
+            <com.commonlib.customviews.CustomTextView
+                android:id="@+id/ctv_drop_down_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="false"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:ellipsize="marquee"
+                android:freezesText="true"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxWidth="230dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/gray_dark_color"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:txtTypeface="BOLD" />
+
+        </RelativeLayout>
+
+        <com.commonlib.customviews.CustomTextView
+            android:id="@+id/ctv_drop_down_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/view_space_4"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:freezesText="true"
+            android:includeFontPadding="false"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/gray_dark_color"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivRight"
+            app:layout_constraintLeft_toLeftOf="@+id/layout_drop_down"
+            app:layout_constraintRight_toLeftOf="@id/ivRight"
+            app:layout_constraintStart_toStartOf="@id/layout_drop_down"
+            app:layout_constraintTop_toBottomOf="@+id/guideline"
+            app:layout_goneMarginLeft="@dimen/view_space_10"
+            app:layout_goneMarginStart="@dimen/view_space_10"
+            app:txtTypeface="REGULAR" />
+
+        <com.commonlib.customviews.CustomImageView
+            android:id="@+id/ivRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/view_space_10"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.commonlib.customviews.CustomTextView
+            android:id="@+id/ctv_notification_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_space_10"
+            android:layout_marginLeft="@dimen/view_space_10"
+            android:layout_marginBottom="@dimen/view_space_10"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:textColor="@color/ThemeWhite"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/ivRight"
+            app:layout_constraintEnd_toEndOf="@+id/ivRight"
+            app:layout_constraintRight_toRightOf="@+id/ivRight"
+            app:layout_constraintStart_toStartOf="@+id/ivRight"
+            app:layout_constraintTop_toTopOf="@+id/ivRight"
+            app:txtTypeface="REGULAR" />
+
+        <com.commonlib.customviews.CustomTextView
+            android:id="@+id/tvRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="@dimen/view_space_10"
+            android:paddingLeft="@dimen/view_space_10"
+            android:paddingEnd="@dimen/view_space_10"
+            android:paddingRight="@dimen/view_space_10"
+            android:textColor="@color/ThemeColor"
+            android:textSize="@dimen/text_20"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/ctvTitle"
+            app:layout_constraintRight_toRightOf="@+id/ivRight"
+            app:layout_constraintTop_toTopOf="@id/ctvTitle"
+            app:txtTypeface="REGULAR" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_percent="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

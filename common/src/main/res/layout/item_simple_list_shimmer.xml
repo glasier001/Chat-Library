@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:descendantFocusability="beforeDescendants"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTransparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout_label_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/align_toolbar_left_icon"
+                android:paddingLeft="@dimen/align_toolbar_left_icon"
+                android:paddingTop="@dimen/view_space_10"
+                android:paddingEnd="@dimen/align_toolbar_left_icon"
+                android:paddingRight="@dimen/align_toolbar_left_icon"
+                android:paddingBottom="@dimen/view_space_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/item_ctv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_shimmer_title"
+                    />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/item_ctv_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_shimmer_subtitle"
+                    android:layout_below="@+id/item_ctv_title"
+                    android:layout_marginTop="@dimen/view_space_5"
+                    android:visibility="gone"
+                     />
+
+                <!--three because it can be distance, address, ticket number etc...-->
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/item_ctv_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_shimmer_title"
+                    android:layout_below="@+id/item_ctv_subtitle"
+                    android:layout_marginTop="@dimen/view_space_5"
+                    android:maxLines="2"
+                    tools:text="@string/placeholder_long"
+                    android:visibility="gone"
+                     />
+            </RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/viewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_divider"
+            android:background="@color/colorDividerGreyDf"
+            android:clickable="false"
+            android:focusable="false" />
+    </LinearLayout>
+
+</layout>
+
+
+

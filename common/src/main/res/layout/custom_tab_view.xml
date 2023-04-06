@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="vertical"
+        >
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_divider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5"
+            />
+
+        <RelativeLayout
+            android:id="@+id/layout_icon_container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintVertical_bias="0.5"
+            >
+
+            <ImageView
+                android:id="@+id/tab_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <com.commonlib.customviews.CustomTextView
+            android:id="@+id/tab_ctv"
+            android:layout_width="@dimen/view_space_40"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_icon_container"
+            android:layout_marginTop="@dimen/view_space_5"
+            android:gravity="center"
+            android:text="@string/placeholder_support"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlueDark35"
+            android:textSize="@dimen/text_8sp"
+            app:ctvTxtColor="@color/colorGreyPlaceHolderC3"
+            app:ctvSelectedTxtColor="@color/colorBlueDark35"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline"
+            app:textAllCaps="true"
+            app:txtTypeface="REGULAR"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/view_space_5"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab_ctv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

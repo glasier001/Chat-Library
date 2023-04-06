@@ -1,0 +1,175 @@
+<resources>
+    <string name="app_name">common</string>
+
+
+    <!--region Common Strings-->
+
+    <!--Registration/SignUp Strings-->
+    <string name="label_full_name">Full Name</string>
+    <string name="label_email">Email</string>
+    <string name="label_country_code">Code</string>
+    <string name="label_mobile_number">Mobile Number</string>
+    <string name="label_phone_number">Phone Number</string>
+    <string name="label_email_phone">Email / Phone Number</string>
+    <string name="label_email_mobile">Email / Mobile Number</string>
+    <string name="label_password">Password</string>
+    <string name="label_confirm_password">Confirm Password</string>
+    <string name="label_register">Register</string>
+    <string name="label_sign_up">Sign up</string>
+    <string name="msg_alert_are_you_sure_remove_bookmark">Are you sure you want to remove this from your bookmark list?</string>
+    <string name="label_already_have_an_ac">Already have an account?</string>
+
+    <!--Login Strings-->
+    <string name="label_login">Login</string>
+    <string name="label_email_mobile_number">Email / Mobile Number</string>
+    <string name="label_forgot_password">Forgot Password?</string>
+    <string name="label_dont_have_an_account">Don\'t have an account?</string>
+
+    <!--Password Strings-->
+    <string name="label_enter_old_password">Enter Old Password</string>
+    <string name="label_old_password">Old Password</string>
+    <string name="label_new_password">New Password</string>
+
+    <!--Verification Strings-->
+    <string name="label_please_enter_verification_code">Please enter verification code sent to your Mobile Number</string>
+    <string name="label_we_have_sent_you_code">We have sent you a verification code to verify this mobile number.</string>
+    <string name="label_didnt_receive_it">Didn\'t receive it?</string>
+    <string name="label_verify_code">Verify Code</string>
+    <string name="label_resend">Resend</string>
+    <string name="placeholder_number">1234</string>
+    <string name="label_submit">Submit</string>
+
+    <!--Common Dialog String-->
+    <string name="label_options">Options</string>
+    <string name="label_choose_from_library">Choose from library</string>
+    <string name="label_take_photo">Take photo</string>
+    <string name="label_alert">Alert</string>
+    <string name="label_ok">Okay</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_please_wait">Please Wait …</string>
+    <string name="label_crop">Crop</string>
+    <string name="label_share">Share</string>
+
+    <!--Other Common String-->
+    <!--region Other Common Strings-->
+    <string name="label_back">Back</string>
+    <string name="label_skip">Skip</string>
+    <string name="msg_press_back_again_to_exit">Press back again to exit</string>
+    <string name="label_asterisk">*</string>
+    <string name="label_search">Search</string>
+    <string name="cd_search">Search input</string>
+    <string name="label_done">Done</string>
+    <string name="blank_space">\u0020</string>
+    <string name="label_about_us">About Us</string>
+    <string name="label_contact_us">Contact Us</string>
+    <string name="label_logout">Logout</string>
+    <string name="label_edit_profile">Edit Profile</string>
+    <string name="label_change_password">Change Password</string>
+    <string name="label_save">Save</string>
+    <string name="device" translatable="false">Device: </string>
+    <string name="os_version" translatable="false">OS Version: </string>
+    <string name="app_version" translatable="false">App Version: </string>
+    <string name="location" translatable="false">Location: </string>
+    <string name="language" translatable="false">Language: </string>
+    <string name="user_id" translatable="false">User ID: </string>
+    <string name="carrier" translatable="false">Carrier: </string>
+    <string name="connection" translatable="false">Connection: </string>
+    <string name="chooser_email">Pick any below email provider</string>
+    <string name="label_edit">Edit</string>
+    <string name="label_error">Error</string>
+    <string name="lable_success">Success</string>
+    <!--endregion-->
+
+    <!--Forgot Password-->
+    <string name="label_we_will_send">We will send an email / sms with a confirmation code to your registered account</string>
+    <string name="label_send_request">Send Request</string>
+    <string name="dot_large">\u25CF</string>
+    <string name="dot_small">\u2022</string>
+
+    <!--Change Phone-->
+    <string name="label_we_will_send_you">We will send you a verification code to your phone number.</string>
+
+    <!--endregion-->
+
+    <!--region Errors-->
+
+    <!--Registration Error-->
+    <string name="error_invalid_country_code">Please enter valid country code</string>
+    <string name="error_small_phone">Mobile number must be at least #### digit long</string>
+    <string name="error_long_phone">Mobile number must not be more than #### digit</string>
+    <string name="error_invalid_phone">Please enter valid mobile number</string>
+    <string name="error_invalid_email">Please enter a valid email</string>
+    <string name="error_short_password">Password must be at least #### characters long</string>
+    <string name="error_empty_name">Please enter your name</string>
+    <string name="error_empty_verification_code">Please enter your verification code</string>
+    <string name="error_wrong_verification_code">You have entered wrong verification code</string>
+    <string name="error_empty_country_code">Please enter your country code</string>
+    <string name="error_empty_phone">Please enter your phone number</string>
+    <string name="error_empty_email_phone">Please enter your phone number / email</string>
+    <string name="error_empty_password">Please enter your password</string>
+    <string name="error_empty_confirm_password">Please confirm your password</string>
+    <string name="error_empty_email">Please enter your email</string>
+    <string name="error_mismatched_confirm_password">Confirmed password must match password</string>
+    <string name="error_empty_current_password">Please enter your current password</string>
+    <string name="error_empty_new_password">Please enter your new password</string>
+    <string name="error_invalid_password">Password must be at least 6 characters long</string>
+    <string name="error_current_password_wrong">You have entered a wrong current password</string>
+    <string name="error_new_password_must_be_different">Your new password cannot be the same as your current password</string>
+    <string name="error_logged_in_from_other_device">You have logged in from other device</string>
+    <string name="error_login_session_expired">Your session has expired. Please log in again</string>
+    <string name="error_please_agree_to_terms">Please agree to the terms and conditions</string>
+    <string name="error_you_havent_made_any_changes">You haven\'t made any changes to save</string>
+    <string name="error_please_enter_landline_number">Please enter landline number</string>
+    <string name="error_please_enter_valid_landline_number">Please enter a valid landline number</string>
+    <string name="error_landline_number_cannot_be_less_than_digits">Landline number should be at least # digits long</string>
+    <string name="error_landline_number_cannot_be_more_than_digits">Landline number cannot be more than # digits</string>
+
+    <!--Address errors-->
+    <string name="error_empty_address_line">Please enter your address</string>
+
+    <!--Network errors-->
+    <string name="error_api_connection_timeout">The request timed out</string>
+    <string name="error_no_internet">The internet connection appears to be offline</string>
+    <string name="error_mobile_network_not_available">Mobile network not available</string>
+    <string name="error_connection_timeout">The request timed out</string>
+    <string name="error_something_went_wrong_try_again">Something went wrong. Please try again after some time.</string>
+    <string name="error_something_went_wrong">Something went wrong.</string>
+
+    <!--File errors-->
+    <string name="error_something_went_wrong_with_image">Something went wrong with image</string>
+    <string name="error_msg_something_went_wrong_with_image">Something went wrong! Please try other image.</string>
+    <string name="error_not_enough_space">No enough space</string>
+
+    <!--Google Play Services-->
+    <string name="error_play_service_unavailable">Required google play services cannot be found</string>
+    <string name="error_play_services_conflicts">Please install, enable or update your Google Play Services</string>
+    <string name="error_play_services_outdated">Please update your Google Play Services</string>
+    <string name="error_google_map_not_installed">Sorry, Google map not installed in your mobile</string>
+    <string name="error_google_map_failed_please_try_again_later">An error occurred while redirecting to the google map</string>
+    <!--endregion-->
+
+    <!--region Helping placeholders to test-->
+    <string name="placeholder_long">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="placeholder_medium">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="placeholder_support">support</string>
+    <string name="placeholder_short">-</string>
+    <!--endregion-->
+
+    <!--Notification Channel-->
+    <!--Notification Strings in firebase services-->
+    <string name="notif_channel_1_id">All notifications</string>
+    <string name="notif_channel_1_name">Allow notifications</string>
+    <string name="notif_channel_1_descr">Receive notifications from this app</string>
+
+    <!--Location Alert Dialog-->
+    <string name="label_device_location_off">Device location off</string>
+    <string name="label_location_msg">To continue, let your device turn on location service.</string>
+    <string name="label_content_why_location">Your current location will be displayed on the map and used for directions and nearby search results</string>
+    <string name="label_enable_location">Enable</string>
+    <string name="label_no_thanks">No Thanks!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="error_gif">x or y bound size should be at least %1$dpx and file size should be no more than %2$sM</string>
+
+</resources>

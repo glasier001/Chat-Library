@@ -1,0 +1,36 @@
+package com.common.android.ui.baseui;
+
+import android.app.Application;
+
+import com.concierge.android.dagger.ApplicationContextModule;
+import com.concierge.android.dagger.DaggerComponent;
+import com.concierge.android.dagger.DaggerDaggerComponent;
+import com.concierge.android.dagger.DaggerModules;
+
+import static com.concierge.android.constants.AppConstants.LIVE_BASIC_URL;
+
+public class ConciergeApp extends Application {
+
+    private DaggerComponent mDaggerComponent;
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        // Dagger%COMPONENT_NAME%
+        mDaggerComponent = DaggerDaggerComponent.builder()
+                // list of modules that are part of this component need to be created here too
+                //Deprecation warning will be gone after usage of ConciergeApp application class!
+                .applicationContextModule(new ApplicationContextModule(this)) // This also corresponds to the name of your module: %component_name%Module
+                .daggerModules(new DaggerModules(LIVE_BASIC_URL))
+                .build();
+
+        // If a Dagger 2 component does not have any constructor arguments for any of its modules,
+        // then we can use .create() as a shortcut instead:
+        //  mDaggerComponent = com.codepath.dagger.components.DaggerDaggerComponent.create();
+    }
+
+    public DaggerComponent getDaggerComponent() {
+        return mDaggerComponent;
+    }
+}

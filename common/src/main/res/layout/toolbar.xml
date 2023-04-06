@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:background="@color/white"
+        android:clipToPadding="true"
+        app:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+        <com.commonlib.customviews.CustomTextView
+            android:id="@+id/ctv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+            app:textAllCaps="true"
+            app:txtTypeface="BOLD"
+            tools:text="@string/placeholder"
+            app:ctvTxtColor="@color/black"
+            android:textColor="@color/black"
+            />
+
+        <com.commonlib.customviews.CustomTextView
+            android:id="@+id/ctv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|left"
+            android:visibility="visible"
+            android:textColor="@color/black"
+            tools:text="@string/placeholder"
+            />
+
+
+        <com.commonlib.customviews.CustomTextView
+            android:id="@+id/ctv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:visibility="visible"
+            android:textColor="@color/black"
+            tools:text="@string/placeholder"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+</merge>

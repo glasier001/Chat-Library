@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/root_layout_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/view_space_14">
+
+            <com.github.florent37.shapeofview.shapes.CircleView
+                android:id="@+id/img_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.elyeproj.loaderviewlibrary.LoaderImageView
+                    android:id="@+id/img_user_"
+                    android:layout_width="@dimen/size_img_circle_size"
+                    android:layout_height="@dimen/size_img_circle_size"
+                    />
+
+            </com.github.florent37.shapeofview.shapes.CircleView>
+
+            <RelativeLayout
+                android:id="@+id/layout_label_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/view_space_10"
+                android:paddingLeft="@dimen/view_space_10"
+                android:paddingEnd="@dimen/view_space_10"
+                android:paddingRight="@dimen/view_space_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/img_user"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_user"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/item_ctv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_shimmer_title" />
+
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/item_ctv_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_shimmer_subtitle"
+                    android:layout_below="@+id/item_ctv_title"
+                    android:layout_marginTop="@dimen/view_space_5"
+                    android:layout_marginEnd="@dimen/view_space_80"
+                    android:layout_marginRight="@dimen/view_space_80" />
+
+                <!--three because it can be distance, address, ticket number etc...-->
+                <com.elyeproj.loaderviewlibrary.LoaderTextView
+                    android:id="@+id/item_ctv_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_shimmer_title"
+                    android:layout_below="@+id/item_ctv_subtitle"
+                    android:layout_marginTop="@dimen/view_space_5"
+                    android:visibility="gone"
+                    tools:text="@string/placeholder_long" />
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</layout>
+
+
+

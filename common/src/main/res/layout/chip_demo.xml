@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/item_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_next_regular"
+            android:textColor="@color/colorGreyPlaceHolderC3"
+            android:textSize="@dimen/text_14"
+            android:typeface="normal"
+            app:chipBackgroundColor="@color/colorTransparent"
+            app:chipCornerRadius="@dimen/view_space_15"
+            app:chipStrokeColor="@color/colorBlueDark35"
+            app:chipStrokeWidth="1dp"
+            app:closeIcon="@drawable/ic_search_clear_light"
+            app:closeIconEnabled="true"
+            app:closeIconTint="@color/colorBlueDark35"
+            app:closeIconVisible="true"
+            app:fontFamily="@font/avenir_next_regular"
+            tools:text="@string/placeholder" />
+
+    </LinearLayout>
+</layout>

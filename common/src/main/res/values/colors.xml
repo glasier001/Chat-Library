@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--////////////////Alerter Toast Color////////////////////-->
+    <color name="alerter_default_success_background">#4CAF50</color>
+    <color name="alert_default_error_background">#F44336</color>
+    <color name="alert_default_text_color">@android:color/white</color>
+    <color name="alert_default_icon_color">@android:color/white</color>
+    <!--//////////////////////////////////////////////////////-->
+
+    // sagar : 19/1/19 11:25 AM Set these colors according to app module theme
+    <color name="colorPrimary">@color/colorBlueDark35</color>
+    <color name="colorPrimaryDark">@color/colorBlueDark35</color>
+    <color name="colorAccent">@color/colorBlueDark35</color>
+
+    <color name="colorDarkTheme">@color/colorBackground</color>
+    <color name="colorBackground">#2F2F3B</color>
+    <color name="appThemeColor">#4C65FF</color>
+    <color name="white">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="lite_white">#80ffffff</color>
+    <color name="ThemeColor">@color/colorBlueDark35</color>
+
+    <!--<color name="ThemeColor">#2F2F3B</color>-->
+    <color name="ThemeRed">#F44236</color>
+    <color name="ThemeWhite">#ffffff</color>
+    <color name="black_toast">#3b3b3b</color>
+    <color name="translucent_black">#80000000</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="gray_dark_color">#3c3c3c</color>
+    <color name="gray_light_color">#999999</color>
+    <color name="line_color">#DEDEDE</color>
+    <color name="close_red">#DA251E</color>
+    <color name="gray_cancelbtnbg">#9d9d9d</color>
+    <color name="gray_cropimgbg">#3c3c3c</color>
+    <color name="text_color_main">#474747</color>
+    <color name="color_line">#DEDEDE</color>
+    <color name="btn_text_color">#FF3069</color>
+    <color name="black">#000000</color>
+    <color name="colorBlackA5">#80000000</color>
+    <color name="color_toast_black">#3b3b3b</color>
+    <color name="swipeoption_red_dark">#F2344A</color>
+    <color name="search_back_color">#494955</color>
+
+    <color name="qrCodeColor">#000000</color>
+    <color name="switch_uncheck_color">#51515C</color>
+    <color name="switch_check_color">#ffffff</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorSearchViewBgF6">#f6f6f6</color>
+    <color name="colorSearchViewBgE6">#E6E6E6</color>
+
+    <color name="shadow_color">#30CCCCCC</color>
+    <!--Shimmer color-->
+    <color name="colorShimmer">@color/colorGreyPlaceHolderC3</color>
+    <color name="colorGreyPlaceHolderC3">#c3c3c3</color>
+    <color name="colorCardSearchView">#80F1EDED</color>
+
+
+    <!--Custom view colors from App module-->
+    <color name="colorBlueDark35">#354597</color>
+<!--    <color name="colorBlueDark72">#7282ff</color>-->
+    <color name="colorGrey8d">#8d94ac</color>
+    <color name="colorDividerGreyDf">#dfdfdf</color>
+    <color name="clr_light_grey">#6C7178</color>
+    <color name="clr_light_black">#3F4555</color>
+
+
+</resources>

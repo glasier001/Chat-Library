@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--this viewSpace means top bottom left and right.-->
+    <dimen name="view_space_1">1dp</dimen>
+    <dimen name="view_space_2">2dp</dimen>
+    <dimen name="view_space_3">3dp</dimen>
+    <dimen name="view_space_4">4dp</dimen>
+    <dimen name="view_space_5">5dp</dimen>
+    <dimen name="view_space_6">6dp</dimen>
+    <dimen name="view_space_7">7dp</dimen>
+    <dimen name="view_space_8">8dp</dimen>
+    <dimen name="view_space_10">10dp</dimen>
+    <dimen name="view_space_11">11dp</dimen>
+    <dimen name="view_space_12">12dp</dimen>
+    <dimen name="view_space_13">13dp</dimen>
+    <dimen name="view_space_14">14dp</dimen>
+    <dimen name="view_space_15">15dp</dimen>
+    <dimen name="view_space_16">16dp</dimen>
+    <dimen name="view_space_17">17dp</dimen>
+    <dimen name="view_space_18">18dp</dimen>
+    <dimen name="view_space_20">20dp</dimen>
+    <dimen name="view_space_22">22dp</dimen>
+    <dimen name="view_space_24">24dp</dimen>
+    <dimen name="view_space_25">25dp</dimen>
+    <dimen name="view_space_26">26dp</dimen>
+    <dimen name="view_space_27">27dp</dimen>
+    <dimen name="view_space_28">28dp</dimen>
+    <dimen name="view_space_29">29dp</dimen>
+    <dimen name="view_space_30">30dp</dimen>
+    <dimen name="view_space_31">31dp</dimen>
+    <dimen name="view_space_32">32dp</dimen>
+    <dimen name="view_space_33">33dp</dimen>
+    <dimen name="view_space_34">34dp</dimen>
+    <dimen name="view_space_35">35dp</dimen>
+    <dimen name="view_space_40">40dp</dimen>
+    <dimen name="view_space_41">41dp</dimen>
+    <dimen name="view_space_42">42dp</dimen>
+    <dimen name="view_space_43">43dp</dimen>
+    <dimen name="view_space_44">44dp</dimen>
+    <dimen name="view_space_45">45dp</dimen>
+    <dimen name="view_space_50">50dp</dimen>
+    <dimen name="view_space_52">52dp</dimen>
+    <dimen name="view_space_54">54dp</dimen>
+    <dimen name="view_space_60">60dp</dimen>
+    <dimen name="view_space_70">70dp</dimen>
+    <dimen name="view_space_80">80dp</dimen>
+    <dimen name="view_space_85">85dp</dimen>
+    <dimen name="view_space_90">90dp</dimen>
+    <dimen name="view_space_100">100dp</dimen>
+    <dimen name="view_space_110">110dp</dimen>
+    <dimen name="view_space_120">120dp</dimen>
+    <dimen name="view_space_140">140dp</dimen>
+    <dimen name="view_space_150">150dp</dimen>
+    <dimen name="view_space_160">160dp</dimen>
+    <dimen name="view_space_170">170dp</dimen>
+    <dimen name="view_space_180">180dp</dimen>
+    <dimen name="view_space_190">190dp</dimen>
+    <dimen name="view_space_200">200dp</dimen>
+    <dimen name="view_space_210">210dp</dimen>
+    <dimen name="view_space_220">220dp</dimen>
+    <dimen name="view_space_230">230dp</dimen>
+    <dimen name="view_space_240">240dp</dimen>
+    <dimen name="view_space_250">250dp</dimen>
+    <dimen name="view_space_260">260dp</dimen>
+
+    <dimen name="align_toolbar_left_icon">@dimen/view_space_14</dimen>
+    <dimen name="align_custom_back_icon">@dimen/view_space_14</dimen>
+    <dimen name="card_view_space">@dimen/view_space_10</dimen>
+
+
+    <!--////////////////////Alerter Toast size//////////////////-->
+    <dimen name="alerter_activity_horizontal_margin">18dp</dimen>
+    <dimen name="alerter_activity_vertical_margin">16dp</dimen>
+    <dimen name="alerter_alert_icn_size">35dp</dimen>
+    <dimen name="alerter_alert_max_height">84dp</dimen>
+    <dimen name="alerter_alert_min_height">64dp</dimen>
+    <dimen name="alerter_alert_negative_margin_top">-26dp</dimen>
+    <dimen name="alerter_alert_padding">30dp</dimen>
+    <dimen name="alerter_padding_default">16dp</dimen>
+    <dimen name="alerter_padding_half">8dp</dimen>
+    <dimen name="alerter_padding_small">4dp</dimen>
+    <dimen name="alerter_progress_bar_size">2dp</dimen>
+    <dimen name="alerter_text_medium">18sp</dimen>
+    <dimen name="alerter_text_small">14sp</dimen>
+    <!--//////////////////////////////////////////////////////////-->
+
+    <!--btn click text size-->
+    <dimen name="btn_txt_size">@dimen/text_14</dimen>
+    <dimen name="btn_padding_top">13dp</dimen>
+    <dimen name="btn_padding_bottom">13dp</dimen>
+
+    <!--alert title btn text size-->
+    <dimen name="alert_btn_txt_size">@dimen/text_14</dimen>
+    <dimen name="height_divider">1dp</dimen>
+    <dimen name="height_divider_thick">2dp</dimen>
+    <dimen name="width_indicator">5dp</dimen>
+
+    <!--Common text size-->
+    // sagar : 22/2/19 11:11 AM Remove duplicate dimensions
+    <dimen name="text_11">11sp</dimen>
+    <dimen name="text_22">22sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_12">@dimen/text_12sp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_15">15sp</dimen>
+    <dimen name="text_30sp">30sp</dimen>
+    <dimen name="text_40sp">40sp</dimen>
+    <dimen name="text_50sp">50sp</dimen>
+    <dimen name="text_60sp">60sp</dimen>
+    <dimen name="text_25sp">25sp</dimen>
+    <dimen name="text_18sp">18sp</dimen>
+    <dimen name="text_15sp">15sp</dimen>
+    <dimen name="text_12sp">12sp</dimen>
+    <dimen name="text_10sp">10sp</dimen>
+    <dimen name="text_9">9sp</dimen>
+    <dimen name="text_8sp">8sp</dimen>
+    <dimen name="text_5sp">5sp</dimen>
+    <dimen name="text_dialog">12sp</dimen>
+    <dimen name="btn_radius_30">30dp</dimen>
+
+
+    <!--Bottom padding for CustomTextView while having 9patch shadow image as background-->
+    <dimen name="padding_bottom_btn_ninep">45dp</dimen>
+    <dimen name="padding_bottom_btn_ninep_pc">40dp</dimen>
+    <!--Normal bottom padding for CustomTextView while having our normal cylindrical drawable background-->
+    <dimen name="padding_bottom_btn_normal">10dp</dimen>
+    <dimen name="padding_bottom_btn_normal_pc">8dp</dimen>
+
+    <dimen name="height_img_list_merchant">89dp</dimen>
+    <dimen name="width_img_list_merchant">85dp</dimen>
+
+    <dimen name="pay_screen_circle_image_width">45dp</dimen>
+    <dimen name="pay_screen_circle_image_height">45dp</dimen>
+
+
+    <dimen name="view_space_civ_left_right">15dp</dimen>
+    <dimen name="view_space_list_start">15dp</dimen>
+    <dimen name="view_space_header_end_icon">14dp</dimen>
+    <dimen name="view_space_home_card_start">11dp</dimen>
+    <dimen name="view_space_home_card_end">12dp</dimen>
+    <dimen name="view_space_header_content">50dp</dimen>
+    <dimen name="view_space_header_content_small">30dp</dimen>
+
+    <dimen name="zero">0dp</dimen>
+    <dimen name="max_width_country_code">70dp</dimen>
+
+    <dimen name="height_shimmer_title">15dp</dimen>
+    <dimen name="height_shimmer_subtitle">15dp</dimen>
+    <dimen name="height_title_bar">50dp</dimen>
+    <dimen name="height_search_view">40dp</dimen>
+    <dimen name="height_video_view">190dp</dimen>
+
+    <dimen name="size_dot">@dimen/view_space_15</dimen>
+    <dimen name="size_img_circle_size">45dp</dimen>
+    <dimen name="size_img_in_profile">56dp</dimen>
+    <dimen name="size_img_inner_size">30dp</dimen>
+    <dimen name="size_img_photo_grid">70dp</dimen>
+    <dimen name="size_img_photo_root">80dp</dimen>
+    <dimen name="size_img_photo_menu">80dp</dimen>
+
+    <dimen name="grid_expected_size">120dp</dimen>
+    <dimen name="item_margin_horizontal">24dp</dimen>
+    <dimen name="item_margin_vertical">8dp</dimen>
+    <dimen name="view_space_chat_item">5dp</dimen>
+    <dimen name="view_space_chat_images_new_screen">8dp</dimen>
+    <dimen name="height_max_chat_image">200dp</dimen>
+</resources>

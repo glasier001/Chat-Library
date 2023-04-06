@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_denied_msg">If you reject permission, you can not use this service \nPlease turn on permissions at [Setting] > [Permission]</string>
+    <string name="title_dialog_permission">Requires Permissions</string>
+    <string name="label_grant">Grant</string>
+    <string name="msg_no_permission_call_phone">To Call Phone allow # to access your call or phones.</string>
+    <string name="msg_no_permission_photos_and_videos">To Capture photos and videos allow # to access your photos or videos.\nTap Settings > Permissions, and turn Camera on.</string>
+    <string name="msg_no_permission_location">To discover veterinarian, para-vet, shopkeeper around you, allow Pashupal access to your location.Tap Settings > Permissions, and turn Location on</string>
+    <string name="msg_storage"># does not have access to your Storage. To enable access,\n\nTap Settings > Permissions and turn Storage on.</string>
+    <string name="msg_no_permission_image_read_write">Write External Storage permission allows us to manage images for your. Please allow this permission in App Settings</string>
+    <string name="msg_general_permission_lack_denied_message"># does not have access to this permission. To enable access,Tap Settings > Permissions and turn on required permission.</string>
+</resources>
