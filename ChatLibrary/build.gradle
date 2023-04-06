@@ -53,7 +53,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
 
-
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
     implementation 'com.pixplicity.easyprefs:EasyPrefs:1.10.0'
     implementation 'com.mikhaellopez:circularfillableloaders:1.4.0'
 
@@ -67,7 +67,7 @@ dependencies {
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
 
     implementation 'com.arthenica:ffmpeg-kit-full:4.5'
-
+    implementation project(':common')
 
     //    pdf library
     implementation 'com.itextpdf:itextg:5.5.10'

@@ -44,7 +44,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:tint="@color/white" />
 
-                <com.medicalstudentosce.chat.util.CircleImageView
+                <com.glasierinc.chatlibrary.chat.util.CircleImageView
                     android:id="@+id/civ_user_image"
                     android:layout_width="@dimen/view_space_50"
                     android:layout_height="@dimen/view_space_50"

@@ -40,6 +40,8 @@ import com.commonlib.constants.AppUrls;
 import com.commonlib.utils.StringUtils;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.gson.Gson;
+import com.gun0912.tedpermission.PermissionListener;
+import com.gun0912.tedpermission.TedPermission;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.BadPdfFormatException;
@@ -55,6 +57,8 @@ import com.glasierinc.chatlibrary.chat.util.ImageFilePath;
 import com.glasierinc.chatlibrary.databinding.ActivityClassRoomChatBinding;
 import com.glasierinc.chatlibrary.webservice.MentalHealthWebService;
 import com.glasierinc.chatlibrary.webservice.RetrofitClientInstance;
+import com.pixplicity.easyprefs.library.Prefs;
+import com.theartofdev.edmodo.cropper.CropImage;
 
 import org.jitsi.meet.sdk.JitsiMeetActivity;
 import org.jitsi.meet.sdk.JitsiMeetConferenceOptions;

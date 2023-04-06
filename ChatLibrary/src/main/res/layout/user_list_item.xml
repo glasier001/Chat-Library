@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="?android:attr/listPreferredItemHeightLarge">
 
-    <com.medicalstudentosce.chat.util.CircleImageView
+    <com.glasierinc.chatlibrary.chat.util.CircleImageView
         android:layout_margin="@dimen/_2sdp"
         android:id="@+id/imgUser"
         android:layout_width="@dimen/_40sdp"
@@ -53,7 +53,7 @@
 
 
 
-    <com.medicalstudentosce.chat.util.CircleImageView
+    <com.glasierinc.chatlibrary.chat.util.CircleImageView
         android:layout_margin="@dimen/_10sdp"
         android:id="@+id/imgStatus"
         android:src="@drawable/green_dot"

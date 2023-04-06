@@ -1,3 +1,4 @@
 <resources>
+    <string name="permission_denied_msg">If you reject permission, you can not use this service \nPlease turn on permissions at [Setting] > [Permission]</string>
     <string name="single_input">Single line input</string>
 </resources>

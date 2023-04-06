@@ -23,7 +23,7 @@ import androidx.swiperefreshlayout.widget.CircularProgressDrawable;
 
 import com.bumptech.glide.Glide;
 import com.commonlib.utils.SharedPrefs;
-import com.google.firebase.analytics.FirebaseAnalytics;
+//import com.google.firebase.analytics.FirebaseAnalytics;
 import com.glasierinc.chatlibrary.R;
 import com.glasierinc.chatlibrary.chat.util.AppPrefs;
 import com.glasierinc.chatlibrary.databinding.ActivityFullImageViewBinding;
@@ -199,11 +199,11 @@ public class FullImageViewActivity extends AppCompatActivity {
 
     private void googleAnalyticEvent(String videoLink) {
 
-        @SuppressLint("MissingPermission") FirebaseAnalytics mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
-        Bundle bundle = new Bundle();
-        bundle.putString("VideoAndroid", "VideoAndroid");
-        bundle.putString("VideoLink", videoLink);
-        mFirebaseAnalytics.logEvent("VideoAndroid", bundle);
+//        @SuppressLint("MissingPermission") FirebaseAnalytics mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+//        Bundle bundle = new Bundle();
+//        bundle.putString("VideoAndroid", "VideoAndroid");
+//        bundle.putString("VideoLink", videoLink);
+//        mFirebaseAnalytics.logEvent("VideoAndroid", bundle);
     }
 
     private void pdfOpen(String fileUrl) {

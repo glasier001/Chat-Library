@@ -2,7 +2,42 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.glasierinc.chatlibrary">
 
-    <application>
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE " />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:required="false" />
+
+    <application
+        android:usesCleartextTraffic="true">
+
+
+        <activity
+            android:name=".chat.activity.FullImageViewActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".chat.activity.ClassRoomChatActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".chat.activity.ClassRoomUserListActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".chat.activity.ClassRoomListActivity"
+            android:exported="true"/>
+
         <activity
             android:name=".EmptyActivity"
             android:exported="false" />

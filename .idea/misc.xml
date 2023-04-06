@@ -4,10 +4,22 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.223731884057971" />
+        <entry key="ChatLibrary/src/main/res/drawable/close_black.xml" value="0.251" />
+        <entry key="ChatLibrary/src/main/res/drawable/half_round_chat_header.xml" value="0.251" />
+        <entry key="ChatLibrary/src/main/res/drawable/ic_back.xml" value="0.1435" />
+        <entry key="ChatLibrary/src/main/res/drawable/ic_image_black_24dp.xml" value="0.1435" />
+        <entry key="ChatLibrary/src/main/res/drawable/ic_play.xml" value="0.251" />
+        <entry key="ChatLibrary/src/main/res/drawable/ic_team.xml" value="0.251" />
         <entry key="ChatLibrary/src/main/res/layout/activity_class_room_chat.xml" value="0.3234375" />
         <entry key="ChatLibrary/src/main/res/layout/activity_class_room_list.xml" value="0.3234375" />
+        <entry key="ChatLibrary/src/main/res/layout/activity_class_room_user_list.xml" value="0.3234375" />
         <entry key="ChatLibrary/src/main/res/layout/activity_empty.xml" value="0.3234375" />
+        <entry key="ChatLibrary/src/main/res/layout/activity_full_image_view.xml" value="0.3234375" />
+        <entry key="ChatLibrary/src/main/res/layout/chat_shimmer_effect.xml" value="0.3234375" />
+        <entry key="ChatLibrary/src/main/res/layout/choose_camera_gallery_bottomsheet_option.xml" value="0.3234375" />
+        <entry key="ChatLibrary/src/main/res/layout/mock_test_exams_menu.xml" value="0.3234375" />
         <entry key="ChatLibrary/src/main/res/layout/msg_item_layout.xml" value="0.3234375" />
+        <entry key="ChatLibrary/src/main/res/layout/user_list_item.xml" value="0.3234375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3234375" />
       </map>
     </option>
