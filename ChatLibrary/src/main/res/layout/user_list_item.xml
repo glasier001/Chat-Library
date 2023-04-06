@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeightLarge">
+
+    <com.medicalstudentosce.chat.util.CircleImageView
+        android:layout_margin="@dimen/_2sdp"
+        android:id="@+id/imgUser"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/ic_team"
+        app:civ_border_color="@color/green"
+        app:civ_border_width="@dimen/_2sdp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:contentDescription="Icon" />
+
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_margin="@dimen/_12sdp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imgUser"
+        android:layout_toRightOf="@id/imgUser"
+        android:gravity="center_vertical"
+        android:layout_toStartOf="@+id/imgStatus">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txtUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txtUserType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+
+
+
+    <com.medicalstudentosce.chat.util.CircleImageView
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/imgStatus"
+        android:src="@drawable/green_dot"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
+
+

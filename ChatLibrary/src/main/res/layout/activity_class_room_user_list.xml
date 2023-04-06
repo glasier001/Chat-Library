@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".chat.activity.ClassRoomUserListActivity">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar_top"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        android:minHeight="?attr/actionBarSize"-->
+<!--        app:theme="@style/ToolbarColoredBackArrow"-->
+<!--        app:titleTextColor="@color/white">-->
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/half_round_chat_header"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/view_space_10"
+            android:padding="5dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+<!--        <com.oetdoctornew.chat.util.CircleImageView-->
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/civ_user_image"-->
+<!--            android:layout_width="@dimen/view_space_50"-->
+<!--            android:layout_height="@dimen/view_space_50"-->
+<!--            android:layout_margin="@dimen/view_space_10"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageView4"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/group_icon" />-->
+
+        <LinearLayout
+            android:id="@+id/llTitle"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ivCall"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="@dimen/view_space_220"
+            android:padding="15dp">
+
+
+
+
+            <TextView
+                android:id="@+id/message_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:maxLines="1"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/message_subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivCall"
+            android:layout_width="@dimen/btn_radius_30"
+            android:layout_height="@dimen/btn_radius_30"
+            android:layout_marginRight="@dimen/view_space_10"
+            android:padding="5dp"
+            android:src="@drawable/ic_call_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ivVideo"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/ivVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/view_space_20"
+            android:padding="5dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_video" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:padding="@dimen/_12sdp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <LinearLayout
+            android:id="@+id/ll_listeningpart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/TextAppearance.AppCompat.Title.Inverse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Listening Part A" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_testRound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.mikhaellopez.circularfillableloaders.CircularFillableLoaders
+        android:id="@+id/progressView"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher_round"
+        android:visibility="gone"
+        app:cfl_border="true"
+        app:cfl_border_width="2dp"
+        app:cfl_progress="50"
+        app:cfl_wave_amplitude="0.06"
+        app:cfl_wave_color="@color/colorPrimaryDark" />
+
+</LinearLayout>
+
+
+
