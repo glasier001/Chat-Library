@@ -15,7 +15,22 @@
 # Uncomment this to preserve the line number information for
 # debugging stack traces.
 #-keepattributes SourceFile,LineNumberTable
-
+-dontwarn **
+-ignorewarnings
+-dontwarn io.realm.**
+-dontwarn android.support.v7.**
+-keep class android.support.v7.** { *; }
+-keep interface android.support.v7.* { *; }
+-keepattributes *Annotation,Signature
+-dontwarn com.github.siyamed.**
+-keep class com.github.siyamed.shapeimageview.**{ *; }
+-keep class android.support.v7.widget.SearchView { *; }
+-keep class android.support.v7.widget.ShareActionProvider { *; }
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-keep class com.medicalstudentosce.webservice.responsepojo.** { *; }
+-ignorewarnings
+-keep class * {
+    public private *;
+}
