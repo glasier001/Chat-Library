@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.glasierinc.chatlibrary.chat.activity.ClassRoomListActivity;
+//import com.glasierinc.chatlibrary.chat.activity.ClassRoomListActivity;
 
 
 public class MainActivity extends AppCompatActivity {
