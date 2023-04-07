@@ -63,7 +63,7 @@
     <dimen name="view_space_240">240dp</dimen>
     <dimen name="view_space_250">250dp</dimen>
     <dimen name="view_space_260">260dp</dimen>
-
+    <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="align_toolbar_left_icon">@dimen/view_space_14</dimen>
     <dimen name="align_custom_back_icon">@dimen/view_space_14</dimen>
     <dimen name="card_view_space">@dimen/view_space_10</dimen>

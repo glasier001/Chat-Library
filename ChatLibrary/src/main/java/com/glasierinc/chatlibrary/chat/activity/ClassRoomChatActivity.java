@@ -122,7 +122,8 @@ public class ClassRoomChatActivity extends AppCompatActivity {
         messages = new ArrayList<>();
 
         userType = getIntent().getStringExtra("userType");
-        userEmail = Prefs.getString("userEmail", "");
+//        userEmail = Prefs.getString("userEmail", "");
+        userEmail = "studentdeveloper1@test.com";
 
 
         title = getIntent().getStringExtra("title");

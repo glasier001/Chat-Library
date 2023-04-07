@@ -12,7 +12,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.alexvasilkov.gestures.transition.ViewsTransitionAnimator;
 import com.alexvasilkov.gestures.transition.tracker.SimpleTracker;
 import com.alexvasilkov.gestures.views.GestureImageView;
-import com.commonlib.customadapters.PhotoPagerAdapter;
+//import com.commonlib.customadapters.PhotoPagerAdapter;
 import com.commonlib.models.Photo;
 
 import org.json.JSONException;
@@ -267,14 +267,14 @@ public abstract class Callbacks {
 
         /*   photoPagerAdapter = new PhotoPagerAdapter(this, imageViewPager, photoList);
             imageViewPager.setAdapter(photoPagerAdapter);*/
-        PhotoPagerAdapter getPhotoPagerAdapter(Context context, ViewPager imageViewPager, List<Photo> photoList);
-
-        //imageViewPager.setAdapter(getPhotoPagerAdapter)
-        void setUpPhotoPagerAdapter(ViewPager imageViewPager);
-
-        SimpleTracker getSimpleListTracker(RecyclerView rvPhotos, RecyclerView.Adapter rvPhotoAdapter, ImageView nestedListImageView);
-
-        SimpleTracker getSimplePagerTracker(PhotoPagerAdapter photoPagerAdapter);
+//        PhotoPagerAdapter getPhotoPagerAdapter(Context context, ViewPager imageViewPager, List<Photo> photoList);
+//
+//        //imageViewPager.setAdapter(getPhotoPagerAdapter)
+//        void setUpPhotoPagerAdapter(ViewPager imageViewPager);
+//
+//        SimpleTracker getSimpleListTracker(RecyclerView rvPhotos, RecyclerView.Adapter rvPhotoAdapter, ImageView nestedListImageView);
+//
+//        SimpleTracker getSimplePagerTracker(PhotoPagerAdapter photoPagerAdapter);
 
         /*     mAnimator = GestureTransitions.from(rvPhotos, getSimpleListTracker).into(viewPager, getSimplePagerTracker);*/
         void initRvToViewPagerAnimator(RecyclerView fromRvPhotos, SimpleTracker fromSimpleListTracker, ImageView nestedListImageView, ViewPager intoViewPager, SimpleTracker intoSimplePagerTracker);

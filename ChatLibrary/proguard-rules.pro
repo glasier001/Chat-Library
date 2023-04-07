@@ -29,7 +29,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
--keep class com.medicalstudentosce.webservice.responsepojo.** { *; }
+-keep class com.glasierinc.chatlibrary.webservice.responsepojo.** { *; }
 -ignorewarnings
 -keep class * {
     public private *;

@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.223731884057971" />
+        <entry key="ChatLibrary/src/main/res/drawable/bg_gray_border.xml" value="0.1935" />
         <entry key="ChatLibrary/src/main/res/drawable/close_black.xml" value="0.251" />
         <entry key="ChatLibrary/src/main/res/drawable/half_round_chat_header.xml" value="0.251" />
         <entry key="ChatLibrary/src/main/res/drawable/ic_back.xml" value="0.1435" />
